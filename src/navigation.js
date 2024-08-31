@@ -190,7 +190,8 @@ function showError(cfg = {}) {
     }
     // use default error template if not passed as a configuration
     _.defaultsDeep(cfg, {
-        template: defaults.templates.error
+        template: defaults.templates.error,
+        type: 'modal'
     });
 
     console.log('showing error... options:', cfg);
